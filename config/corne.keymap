@@ -7,7 +7,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/mouse.h>
+//#include <dt-bindings/zmk/mouse.h>
 
 #define Base 0
 #define Lower 1
@@ -62,8 +62,8 @@
 			label = "Funct";
             bindings = <
 &kp TAB    &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3    &sys_reset         &kp C_VOLUME_UP    &kp K_PREV      &kp K_PLAY_PAUSE  &kp K_NEXT       &none  &kp BSPC
-&kp LSHFT  &none         &kp LEFT_ARROW  &kp UP_ARROW  &kp DOWN        &kp RIGHT          &kp C_VOLUME_DOWN  &mkp LCLK       &trans	         &mkp RCLK        &none  &kp CAPSLOCK
-&kp LCTRL  &none         &trans		 &trans	       &trans	       &trans		  &kp K_MUTE         &trans	     &trans		 &trans		  &none  &kp ESC
+&kp LSHFT  &none         &kp LEFT	 &kp UP	       &kp DOWN        &kp RIGHT          &kp C_VOLUME_DOWN  &none           &kp UP	       &none        &none  &kp CAPSLOCK
+&kp LCTRL  &none         &trans		 &trans	       &trans	       &trans		  &kp K_MUTE         &kp LEFT	     &kp DOWN	       &kp RIGHT		  &none  &kp ESC
                                          &kp LALT      &none           &kp RET            &kp SPACE          &none           &kp LGUI
             >;
         };
